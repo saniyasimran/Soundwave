@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8ff;
+    color: #222;
+}
+
+/* Navigation */
+
+nav {
+    background: #1565c0;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Home */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #1565c0;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.button {
+    background: #1565c0;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #0d47a1;
+}
+
+/* Songs */
+
+.songs-section {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.songs-section h1 {
+    color: #1565c0;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.songs-section > p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.song-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.song-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.music-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.song-card h2 {
+    color: #1565c0;
+    margin-bottom: 12px;
+}
+
+.song-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.song-card span {
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: #1565c0;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .song-container {
+        grid-template-columns: 1fr;
+    }
+}
